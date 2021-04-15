@@ -6117,6 +6117,16 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "maven_proregular";
+  src: url("../polices/mavenpro-regular-webfont.woff2") format("woff2"), url("../polices/mavenpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "maven_proregular", times, sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -6141,6 +6151,7 @@ li {
 }
 
 a {
+  height: 100%;
   text-decoration: none;
 }
 
@@ -6157,26 +6168,36 @@ header nav * {
 header nav {
   display: flex;
   height: 50px;
-  width: 70%;
-  border: 2px solid blue;
+  width: 80%;
 }
 header nav .logo {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
   text-transform: uppercase;
 }
 header nav ul {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
-  border: 2px solid green;
+}
+header nav ul li {
+  height: 80%;
+  padding: 0;
+  margin: 0;
 }
 header nav ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
   font-size: 12.5px;
+  padding: 2% 15%;
+}
+header nav ul li a:hover {
+  background-color: #3676bb;
 }
 header .bg-header {
   height: 200px;
@@ -6225,7 +6246,6 @@ section .contenu > div {
 section .contenu > div .container-card {
   display: flex;
   justify-content: space-between;
-  border: 2px solid #26ccb0;
   height: 200px;
 }
 section .contenu > div .container-card .card {
@@ -6239,7 +6259,13 @@ section .contenu > div .container-card .card {
   text-align: center;
 }
 section .contenu > div .container-card .card i {
+  align-self: center;
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  border-radius: 50%;
   color: #3676bb;
+  padding: 5px;
 }
 section .contenu > div .container-card .card h4 {
   margin-top: 15px;
@@ -6254,7 +6280,6 @@ section .contenu > div .container-card .card p:last-of-type {
   padding: 10px;
 }
 section .contenu > div .container-card_footer {
-  border: 2px solid #633535;
   display: flex;
   height: 170px;
   width: 100%;
@@ -6335,6 +6360,55 @@ section .contenu > div .container-card_footer .container-img .card-img .card-img
   font-size: 10px;
   color: white;
   margin-bottom: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: rgba(195, 195, 195, 0.5);
+  width: 100%;
+  height: 200px;
+  background-color: #3676bb;
+}
+footer .footer-contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-contenu .footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-contenu .footer-text h4 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+}
+footer .footer-contenu .footer-text p {
+  font-size: 12.5px;
+  margin: 5px 0;
+}
+footer .footer-contenu .icon-social {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  margin: 2% 0;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #363b47;
+  height: 20%;
+}
+footer .copyright i {
+  font-size: 75%;
 }
 
 /*# sourceMappingURL=app.css.map */

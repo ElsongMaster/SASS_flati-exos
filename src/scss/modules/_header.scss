@@ -14,6 +14,7 @@ li {
 }
 
 a {
+  height: 100%;
   text-decoration: none;
 }
 header {
@@ -29,26 +30,39 @@ header {
   nav {
     display: flex;
     height: 50px;
-    width: 70%;
-    border: 2px solid blue;
+    width: 80%;
+    // border: 2px solid blue;
 
     .logo {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 2px solid red;
+      //   border: 2px solid red;
       text-transform: uppercase;
     }
     ul {
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: flex-end;
       width: 100%;
-      border: 2px solid green;
+      //   border: 2px solid green;
       li {
+        height: 80%;
+        padding: 0;
+        margin: 0;
+        // border: 2px solid yellow;
         a {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 100%;
           font-size: 12.5px;
+          padding: 2% 15%;
+          //   border: 2px solid red;
+        }
+        a:hover {
+          background-color: rgb(54, 118, 187);
         }
       }
     }
