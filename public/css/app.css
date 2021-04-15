@@ -6186,4 +6186,155 @@ header .bg-header {
   background-size: 100% 100%;
 }
 
+section {
+  background-color: #efeff1;
+}
+section .section-header {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e8e6e0;
+}
+section .section-header p:last-of-type {
+  margin-top: 15px;
+}
+section .section-header p {
+  color: #7a848d;
+  width: 100%;
+  text-align: center;
+}
+section .section-header p .span-bg {
+  color: white;
+  background-color: #26a2cc;
+}
+section .section-header p span:not(.span-bg) {
+  color: #26a2cc;
+  font-weight: bold;
+}
+section .contenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section .contenu > div {
+  width: 80%;
+  margin: 3% 0;
+}
+section .contenu > div .container-card {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #26ccb0;
+  height: 200px;
+}
+section .contenu > div .container-card .card {
+  height: 100%;
+  width: 200px;
+  background-color: #e2e0e2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+section .contenu > div .container-card .card i {
+  color: #3676bb;
+}
+section .contenu > div .container-card .card h4 {
+  margin-top: 15px;
+}
+section .contenu > div .container-card .card p {
+  font-size: 1vw;
+}
+section .contenu > div .container-card .card p:first-of-type {
+  color: #26a2cc;
+}
+section .contenu > div .container-card .card p:last-of-type {
+  padding: 10px;
+}
+section .contenu > div .container-card_footer {
+  border: 2px solid #633535;
+  display: flex;
+  height: 170px;
+  width: 100%;
+  margin-top: 50px;
+}
+section .contenu > div .container-card_footer p,
+section .contenu > div .container-card_footer button {
+  font-size: 1vw;
+}
+section .contenu > div .container-card_footer .work,
+section .contenu > div .container-card_footer .container-img {
+  height: 100%;
+  width: 100%;
+}
+section .contenu > div .container-card_footer .work h4,
+section .contenu > div .container-card_footer .work p:last-of-type {
+  color: rgba(0, 0, 0, 0.6);
+}
+section .contenu > div .container-card_footer .work h4 {
+  font-size: 12.5px;
+  text-transform: none;
+}
+section .contenu > div .container-card_footer .work p {
+  width: 70%;
+  margin: 10px 0;
+}
+section .contenu > div .container-card_footer .work p:first-of-type {
+  color: grey;
+}
+section .contenu > div .container-card_footer .work p:last-of-type {
+  color: rgba(0, 0, 0, 0.8);
+}
+section .contenu > div .container-card_footer .work button {
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: #26a2cc;
+}
+section .contenu > div .container-card_footer .container-img {
+  display: flex;
+}
+section .contenu > div .container-card_footer .container-img .card-img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-left: 5px;
+}
+section .contenu > div .container-card_footer .container-img .card-img .bg-img,
+section .contenu > div .container-card_footer .container-img .card-img .card-img_text {
+  width: 100%;
+}
+section .contenu > div .container-card_footer .container-img .card-img .bg1 {
+  background-image: url("../img/flati-design-screenshot1.png");
+}
+section .contenu > div .container-card_footer .container-img .card-img .bg2 {
+  background-image: url("../img/flati-design-screenshot2.png");
+}
+section .contenu > div .container-card_footer .container-img .card-img .bg3 {
+  background-image: url("../img/flati-design-screenshot3.png");
+}
+section .contenu > div .container-card_footer .container-img .card-img .bg-img {
+  height: 60%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section .contenu > div .container-card_footer .container-img .card-img .card-img_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #38485f;
+  height: 40%;
+}
+section .contenu > div .container-card_footer .container-img .card-img .card-img_text h4 {
+  font-size: 10px;
+  color: white;
+  margin-bottom: 5px;
+}
+
 /*# sourceMappingURL=app.css.map */

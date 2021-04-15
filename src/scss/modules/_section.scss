@@ -1,0 +1,160 @@
+section {
+  background-color: rgb(239, 239, 241);
+  .section-header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(232, 230, 224);
+
+    p:last-of-type {
+      margin-top: 15px;
+    }
+
+    p {
+      color: rgb(122, 132, 141);
+      width: 100%;
+      text-align: center;
+
+      .span-bg {
+        color: white;
+        background-color: rgb(38, 162, 204);
+      }
+      span:not(.span-bg) {
+        color: rgb(38, 162, 204);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .contenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    > div {
+      width: 80%;
+      margin: 3% 0;
+
+      .container-card {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid rgb(38, 204, 176);
+        height: 200px;
+        .card {
+          height: 100%;
+          width: 200px;
+          background-color: rgb(226, 224, 226);
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          i {
+            color: rgb(54, 118, 187);
+          }
+          h4 {
+            margin-top: 15px;
+          }
+          p {
+            font-size: 1vw;
+          }
+          p:first-of-type {
+            color: rgb(38, 162, 204);
+          }
+          p:last-of-type {
+            padding: 10px;
+          }
+        }
+      }
+
+      .container-card_footer {
+        border: 2px solid rgb(99, 53, 53);
+        display: flex;
+        height: 170px;
+        width: 100%;
+        margin-top: 50px;
+        p,
+        button {
+          font-size: 1vw;
+        }
+        .work,
+        .container-img {
+          height: 100%;
+          width: 100%;
+        }
+        .work {
+          h4,
+          p:last-of-type {
+            color: rgba(0, 0, 0, 0.6);
+          }
+          h4 {
+            font-size: 12.5px;
+            text-transform: none;
+          }
+          p {
+            width: 70%;
+            margin: 10px 0;
+          }
+
+          p:first-of-type {
+            color: grey;
+          }
+          p:last-of-type {
+            color: rgba(0, 0, 0, 0.8);
+          }
+
+          button {
+            border: none;
+            color: white;
+            padding: 10px 5px;
+            border-radius: 5px;
+            background-color: rgb(38, 162, 204);
+          }
+        }
+        .container-img {
+          display: flex;
+          .card-img {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            margin-left: 5px;
+            .bg-img,
+            .card-img_text {
+              width: 100%;
+            }
+            .bg1 {
+              background-image: url("../img/flati-design-screenshot1.png");
+            }
+            .bg2 {
+              background-image: url("../img/flati-design-screenshot2.png");
+            }
+            .bg3 {
+              background-image: url("../img/flati-design-screenshot3.png");
+            }
+            .bg-img {
+              height: 60%;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            .card-img_text {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              background-color: rgb(56, 72, 95);
+              height: 40%;
+              h4 {
+                font-size: 10px;
+                color: white;
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
